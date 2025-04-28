@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from menu.views import home
+from django.http import HttpResponse
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
-    path('about/', lambda r: None, name='about'),
+    path('about/', lambda r: HttpResponse(), name='about'),
 ]
