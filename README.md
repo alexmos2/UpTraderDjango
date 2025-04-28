@@ -1,0 +1,2 @@
+# UpTraderDjango
+ UpTraderDjango

@@ -1,0 +1,10 @@
+<ul>
+    {% for item in prepared_items %}
+        <li>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            {% if item.children %}
+                {% include 'menu/menu.html' with prepared_items=item.children only %}
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
