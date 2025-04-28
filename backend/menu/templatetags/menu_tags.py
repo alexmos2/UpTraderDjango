@@ -31,10 +31,6 @@ def prepare_menu_items(items):
 
 
 def resolve_url(url_value):
-    """
-    Функция определяет, является ли URL явным (/...) или именованным маршрутом.
-    Возвращает готовый URL для отображения.
-    """
     if url_value.startswith('/'):
         return url_value
     else:
